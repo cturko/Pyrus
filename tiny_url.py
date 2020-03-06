@@ -1,7 +1,6 @@
-#!/usr/bin/env/python
-# -*- coding: utf-8 -*-
 import urllib.request
 import sys
+
 
 def tiny_url(web_address):
     target = 'http://tinyurl.com/api-create.php?url=' + web_address
@@ -10,13 +9,9 @@ def tiny_url(web_address):
 
 def main():
     while True:
-        web_address = input("Enter URL: ")
+        web_address = input("Enter URL [or quit]: ")
         if web_address == 'quit':
             sys.exit()
-        else:
-            print(tiny_url(web_address))
+        else: print(tiny_url(web_address))
 
-
-if __name__ == '__main__':
-    main()
-
+main()
