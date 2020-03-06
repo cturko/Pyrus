@@ -1,10 +1,8 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import urllib.request
 
 try:
-    urllib.request.urlopen('https://google.ca')
-    print('Connected.')
+    urllib.request.urlopen('https://duckduckgo.com')
+    print("Success: Connected.")
 
 except urllib.error.URLError:
-    print('No connection.')
+    print("Error: No Connection.")
